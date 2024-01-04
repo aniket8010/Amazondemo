@@ -21,13 +21,13 @@ header{
     gap: 5px;
 }
 .search{
-    width: 48%;
+    width: 50%;
     display: flex;
     padding: 10px 0px;
-    
+
 
 }
-.search select{
+.search  select{
     padding: 0px 1px;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
@@ -55,6 +55,7 @@ header{
     align-items: center;
     justify-content: center;
     display: flex;
+    gap: 25px;
 }
 .tools .lang{
     display: flex;
@@ -85,6 +86,123 @@ header{
 .tools .lang:hover .lang-tips{
     visibility: visible;
     transform: translateY(0px);
+}
+.tools .signin{
+    align-items: center;
+}
+.tools .signin p{
+    font: 12px;
 
+}
+.tools .signin h4{
+    font: 14px;
+}
+.signin .sign-box{
+    top: 100%;
+    box-sizing: border-box;
+    padding: 20px ;
+    width: 250px;
+    background: white;
+}
+header .tools .sign{
+    position: relative;
+}
+header .tools .sign span{
+    font-size: 12px;
+}
+header .tools .sign h5{
+    font-size: 16px;
+}
+header .tools .sign .contant{
+    background: rgb(255, 255, 255);
+    min-width: 300px;
+    min-height: 300px;
+    padding: 15px;
+    position: absolute;
+    right: -80px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: 0.5s ;
+}
+header .tools .sign .contant .top{
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 
+}
+header .tools .sign .contant .top .sign-btn{
+    border-radius: 8px;
+    padding: 5px 60px;
+    background-color: #feda2a;
+    border: none;
+    margin-bottom: 5px;
+}
+header .tools .sign .contant .top span{
+    font-size: 12px;
+    color: black;
+}
+header .tools .sign .contant .top a{
+    font-size: 12px;
+    color: darkcyan;
+    text-decoration: none;
+}
+header .tools .sign .contant .top a:hover{
+color: orange;
+}
+header .sign .contant .bottom .left ol{
+    list-style: none;
+}
+header .sign .contant .bottom .left h4{
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+header .sign .contant .bottom .left ol a{
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+header .tools .sign:hover .contant{
+    visibility: visible;
+    transform: translateY(10px);
+}
+.contant .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.contant .bottom .left{
+    margin-top: 10px;
+    border-right: 1px solid rgba(0, 0, 0, 00.25);
+    width: 50%;
+}
+.tools .sign .contant .bottom .right h4{
+color: #000000;
+font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+header .sign .contant .bottom .right ol a{
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+.tools .returns span{
+    font-size: 12px;
+}
+.tools .returns h4{
+    font-size: 14px;
+}
+.tools .cart i{
+font-size: 30px;
+}
+.tools .cart{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.tools .cart h4{
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding-top: 15px;
 }
