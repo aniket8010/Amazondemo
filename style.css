@@ -34,6 +34,8 @@ header{
     outline: none;
     border: none;
     background-color: #D4D4D4;
+    align-items: center;
+    justify-content: center;
 }
 .search input{
     padding: 0px 10px;
@@ -49,6 +51,40 @@ header{
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
 }
+.tools{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 .tools .lang{
     display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+
+}
+.tools .lang-tips{
+    background: white;
+    padding: 20px;
+    width: 150px;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0px 1px 1px 0px black;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: 1s transform;
+
+}
+.tools .lang-tips label{
+    color: black;
+    margin-top: 10px;
+    display: inline-block;
+}
+.tools .lang:hover .lang-tips{
+    visibility: visible;
+    transform: translateY(0px);
+
+
 }
