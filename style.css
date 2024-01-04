@@ -7,10 +7,12 @@ header{
     display: flex;
     color: white;
     gap: 20px;
+    
 }
 .header-container-top{
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 .header-container-top .logo{
     padding: 0px 10px;
@@ -24,8 +26,6 @@ header{
     width: 50%;
     display: flex;
     padding: 10px 0px;
-
-
 }
 .search  select{
     padding: 0px 1px;
@@ -63,8 +63,6 @@ header{
     justify-content: center;
     align-items: center;
     padding: 15px;
-    
-
 }
 .tools .lang-tips{
     background: white;
@@ -76,7 +74,6 @@ header{
     visibility: hidden;
     transform: translateY(50px);
     transition: 1s transform;
-
 }
 .tools .lang-tips label{
     color: black;
@@ -131,7 +128,6 @@ header .tools .sign .contant .top{
     text-align: center;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-
 }
 header .tools .sign .contant .top .sign-btn{
     border-radius: 8px;
@@ -221,19 +217,40 @@ font-size: 30px;
     max-height: 100%;
     align-items: center;
     padding: 8px 9px;
-    gap: 5px;
+    gap: 4px;
 }
 .panel .panel-ops{
     display: flex;
     justify-content: space-evenly;
-
 }
 .panel .panel-ops p{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
-    padding: 8px 10px;
+    /* align-items: center; */
+    font-size: 14px;
+    padding: 8px 9px;
     font-weight: 700;
     cursor: pointer;
+}
+main .banner{
+    border: 1px solid red;
+    height: 84vh;
+    position: relative;
+    background-size: cover;
+}
+main .banner .slide{
+    height: 100%;
+}
+main .banner .slide .carousel-inner{
+    height: 100%;
+}
+main .banner .slide .carousel-inner .carousel-item{
+    height: 100%;
+}
+main .banner .slide .carousel-inner .carousel-item img{
+    height: 100%;
+}
+main .banner .slide button{
+    height: 300px;
+    width: 100px;
 }
