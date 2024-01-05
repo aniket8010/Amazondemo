@@ -6,8 +6,13 @@
 header{
     display: flex;
     color: white;
-    gap: 20px;
-    
+    gap: 20px; 
+}
+a{
+    text-decoration: inherit;
+}
+p{
+    margin: 0;
 }
 .header-container-top{
     display: flex;
@@ -17,10 +22,21 @@ header{
 .header-container-top .logo{
     padding: 0px 10px;
 }
-.header-container-top .location{
+.header-container-top .location {
     align-items: center;
     display: flex;
     gap: 5px;
+    justify-content: center;
+}
+.header-container-top .location i{
+    padding-top: 9px;
+}
+.header-container-top .location .location-name h5{
+    font-size: 15px;
+    font-weight: 700;
+}
+.header-container-top .location .location-name p{
+    font-size: 12px;
 }
 .search{
     width: 50%;
@@ -55,14 +71,16 @@ header{
     align-items: center;
     justify-content: center;
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 .tools .lang{
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
+    z-index: 1;
+    /* height: 10px; */
 }
 .tools .lang-tips{
     background: white;
@@ -84,17 +102,18 @@ header{
     visibility: visible;
     transform: translateY(0px);
 }
-.tools .signin{
+.tools .sign{
     align-items: center;
 }
-.tools .signin p{
+.tools .sign p{
     font: 12px;
 
 }
-.tools .signin h4{
+.tools .sign h5{
     font: 14px;
+    font-weight:700 ;
 }
-.signin .sign-box{
+.sign .sign-box{
     top: 100%;
     box-sizing: border-box;
     padding: 20px ;
@@ -112,8 +131,8 @@ header .tools .sign h5{
 }
 header .tools .sign .contant{
     background: rgb(255, 255, 255);
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 400px;
+    min-height: 400px;
     padding: 15px;
     position: absolute;
     right: -80px;
@@ -123,6 +142,7 @@ header .tools .sign .contant{
     visibility: hidden;
     transform: translateY(5px);
     transition: 0.5s ;
+    z-index: 1;
 }
 header .tools .sign .contant .top{
     text-align: center;
@@ -150,6 +170,7 @@ color: orange;
 }
 header .sign .contant .bottom .left ol{
     list-style: none;
+    margin-right: 20px;
 }
 header .sign .contant .bottom .left h4{
     color: #000000;
@@ -188,6 +209,7 @@ header .sign .contant .bottom .right ol a{
 }
 .tools .returns h4{
     font-size: 14px;
+    font-weight: 700;
 }
 .tools .cart i{
 font-size: 30px;
@@ -219,6 +241,10 @@ font-size: 30px;
     padding: 8px 9px;
     gap: 4px;
 }
+.panel .panel-all h4{
+    font-size: 18px;
+    margin: 0;
+}
 .panel .panel-ops{
     display: flex;
     justify-content: space-evenly;
@@ -226,7 +252,7 @@ font-size: 30px;
 .panel .panel-ops p{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     font-size: 14px;
     padding: 8px 9px;
     font-weight: 700;
@@ -234,7 +260,7 @@ font-size: 30px;
 }
 main .banner{
     border: 1px solid red;
-    height: 84vh;
+    height: 100%;
     position: relative;
     background-size: cover;
 }
@@ -254,3 +280,49 @@ main .banner .slide button{
     height: 300px;
     width: 100px;
 }
+/* products category style */
+
+main .banner .products-category{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+main .banner .products-category .product-container{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+main .banner .products-category .product-container .item{
+    width: 24%;
+    background: white;
+    padding: 20px 10px;
+}
+main .banner .products-category .product-container .item .products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+main .banner .products-category .product-container .item .product {
+    width: 48%;
+    margin-top: 10px;
+  }
+  main .banner .products-category .product-container .item .product .product-img {
+    width: 155px;
+    height: 100px;
+  }
+  main .banner .products-category .product-container .item .product .product-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .banner .products-category .product-container .item .product p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+ 
+
+  
+
