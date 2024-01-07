@@ -391,15 +391,15 @@ main .banner .products-category .product-container .item .product {
     color: black;
 }
 .product-deals .bottom .item .top {
-    background: white;
+    background: #F7F8F8;
     width: 100%;
     height: 100%;
     padding: 30px;
     margin-bottom: 15px;
 }
-.product-deals .bottom .item {
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
-
+.product-deals .bottom .item .top {
+    width: 100%;
+    height: 150px;
 }
 .product-deals .bottom .item .top img{
     width: 100%;
@@ -422,9 +422,82 @@ main .banner .products-category .product-container .item .product {
   }
   .product-deals .bottom .item .bottom p {
     font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
- 
+ /* recommended styling */
+.recommended{
+    background: rgba(255,255, 255);
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.recommended .img-box{
+    width: 300px;
+   height: 200px;
+   padding: 20px;
+}
+.recommended .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+.recommended .stars{
+    color: #FFC200;
+}
+.recommended button {
+    background: #CC0C39;
+    color: white;
+    border: none;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 2px;
+}
+.recommended p, .recommended h4{
+    font-size: 20px;
+    margin: 0;
+}
+.recommended span{
+    font-size: 12px;
+    color: #CC0C39;
+    font-weight: 500;
+}
+.recommended .deals{
+    margin-top: 5px;
+}
+.recommended .price{
+    display: flex;
+    gap: 7px;
+    margin-top: 5px;
+}
+.recommended .price h5 {
+   display: flex;
+   color: #CC0C39;
+  } 
+  .recommended .price h6 {
+     display: flex;
+    align-self: flex-end;
+    text-decoration: line-through;
+  }
+  .recommended .price h5 span {
+    font-size: 14px;
+    color: #CC0C39;
+    font-weight: 400;
+  }
+  .recommended .price .prime-logo i {
+    font-size: 10px;
+    color: #FFC200;
+  }
+  .recommended .price .prime-logo span {
+    font-size: 10px;
+    color: #2292C0;
+  }
+  
 
+ 
 
   
  
