@@ -344,9 +344,9 @@ main .banner .products-category .product-container .item .product {
 .product-deals{
     background: rgb(255, 255,255);
     padding: 10px 20px 10px 20px ;
-    width: 1500px;
+    width: 99%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 115px;
     height: 100%;
 }
 .product-deals .top{
@@ -359,17 +359,26 @@ main .banner .products-category .product-container .item .product {
 .product-deals .top a{
     color: rgb(5, 126, 126);
 }
+.product-deals .bottom .item .bottom button{
+    width: 70px;
+    height: 100%;
+}
 .product-deals .bottom .products{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .product-deals .bottom .products .item{
     height: 100%;
     width: 16%;
-    padding: 23px;
+    padding: 10px 0px;
     padding-top: 10px;
 }
-.product-deals .bottom button[ data-bs-target="#carouselExampleControls1"]{
+.bottom .carousel-inner .active {
+    display: flex;
+    justify-content: center;
+}
+.product-deals .bottom  button{
     background: rgb(255, 255, 255);
     width: 45px;
     height: 100px;
@@ -390,16 +399,19 @@ main .banner .products-category .product-container .item .product {
 .product-deals .bottom i{
     color: black;
 }
+.product-deals .bottom .carousel-item{
+    width: 100%;
+}
 .product-deals .bottom .item .top {
     background: #F7F8F8;
     width: 100%;
     height: 100%;
-    padding: 30px;
+    /* padding: 10px; */
     margin-bottom: 15px;
 }
 .product-deals .bottom .item .top {
     width: 100%;
-    height: 150px;
+    height: 170px;
 }
 .product-deals .bottom .item .top img{
     width: 100%;
@@ -410,6 +422,7 @@ main .banner .products-category .product-container .item .product {
     background: #CC0C39;
    color: white;
    border: none;
+   width: 40%;
    font-size: 12px;
    padding: 5px;
    border-radius: 2px;
@@ -418,13 +431,16 @@ main .banner .products-category .product-container .item .product {
 .product-deals .bottom .item .bottom span {
     font-size: 12px;
     color: #CC0C39;
-    font-weight: 500;
+    font-weight: 700;
+    margin-left: 5px;
   }
   .product-deals .bottom .item .bottom p {
-    font-size: 11px;
+    font-size: 12px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    font-weight: 500;
+    margin-top: 3px;
+    /* justify-content: center; */
   }
  /* recommended styling */
 .recommended{
@@ -495,7 +511,97 @@ main .banner .products-category .product-container .item .product {
     font-size: 10px;
     color: #2292C0;
   }
-  
+  /* Footer part start */
+.footer{
+    width: 100%;
+    height: 100%;
+}
+.footer .back-to-top {
+    width: 100%;
+    background-color: #485769;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    height: 49px;
+    cursor: pointer;
+}
+.footer .back-to-top p{
+    font-size: 13px;
+}
+.footer .contentfooter{
+    width: 100%;
+    height: 100%;
+    padding: 30px auto;
+    background-color: #232F3E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 300px;
+
+}
+.footer .contentfooter .get-to-know h6{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footer .contentfooter .get-to-know a{
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+.footer .contentfooter .connect-with-us h6{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footer .contentfooter .connect-with-us a{
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    text-decoration: underline;
+    margin-top: 10px;
+
+
+}
+.footer .contentfooter .make-money h6{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footer .contentfooter .make-money a{
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    text-decoration: underline;
+    margin-top: 10px;
+
+
+}
+.footer .contentfooter .help h6{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footer .contentfooter .help a{
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    text-decoration: underline;
+    margin-top: 10px;
+
+
+}
+
+
+
 
  
 
