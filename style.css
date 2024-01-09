@@ -370,9 +370,13 @@ main .banner .products-category .product-container .item .product {
 }
 .product-deals .bottom .products .item{
     height: 100%;
-    width: 16%;
+    width: 100%;
     padding: 10px 0px;
     padding-top: 10px;
+    display: block;
+}
+.product-deals .bottom .products a{
+    width: 100%;
 }
 .bottom .carousel-inner .active {
     display: flex;
