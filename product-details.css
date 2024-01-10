@@ -51,14 +51,40 @@
     cursor: pointer;
     padding: 5px;
 }
-.product-main-container .details .right .bottom{
+.product-main-container .details .right .main-bottom1{
     width: 100%;
-    border: 1px solid red;
-    margin: 20px 20px;
-    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+.product-main-container .details .right .main-bottom2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.product-main-container .details .right .main-bottom4{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.product-main-container .details .right .main-bottom5{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}.product-main-container .details .right .main-bottom6{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}.product-main-container .details .right .main-bottom3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.product-main-container .details .right .bottom{
+    width: 19%;
+    margin: 15px 10px;
 }
 .product-main-container .details .right .bottom .product img{
-    width: 18%;
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
     background-color: #F7F7F7;
@@ -67,7 +93,7 @@
 
 }
 .product-main-container .details .right .bottom .content{
-    width: 18%;
+    width: 100%;
     height: 100%;
 }
 .product-main-container .details .right .bottom .content h6{
@@ -175,12 +201,81 @@
     font-size: 12px;
     text-decoration: underline solid rgb(199, 81, 31);
 }
-.main-bottom{
+.pagination {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    gap: 8px;
     display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
+.pagination button{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 15px;
+    border: 1px solid #D5D9D9;
+    background-color: #F7FAFA;
+    border-radius: 8px;
 
+}
+.pagination button:hover{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+.pagination button i{
+    font-size: 14px;
+    font-weight: 500;
+}
+.shop-all{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px 26px;
 
-
-
+}
+.shop-all a{
+    font-size: 24px;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+}
+.shop-all a:hover{
+    text-decoration: underline;
+}
+.signin{
+    background-color: white;
+}
+.signin p{
+    font-size: 13px;
+    color:black;
+    text-align: center;
+}
+.signin .sign-btn{
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+}
+.signin .sign-btn button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 95px;
+    background-color: #FFD978;
+    border: 2px solid #dca61d;
+    font-weight: 700;
+}
+.signin .new-text{
+    text-align: center;
+}
+.signin .new-text span{
+    font-size: 11px;
+    color: black;
+}
+.signin .new-text a{
+    font-size: 11px;
+}
 
 
